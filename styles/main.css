@@ -1,5 +1,11 @@
 
 
 body {
-    background-color: grey;
+    background-color: lightgrey;
 }
+
+h1 {
+    color: grey;
+    text-align: center;
+}
+
