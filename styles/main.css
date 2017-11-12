@@ -11,6 +11,10 @@ body {
   color: #333;
   -webkit-font-smoothing: antialiased; }
 
+.container {
+  max-width:720px;
+  margin: auto;
+}
 
 h1 {
   font-size: 40px;
@@ -30,6 +34,7 @@ h1 {
 
 .intro__links li {
   flex: 1;
+  list-style: none;
   text-align: center; }
 
 
@@ -39,3 +44,5 @@ h1 {
 
 .intro__links a:hover {
   color: #003EE8; }
+
+list-style: none;
