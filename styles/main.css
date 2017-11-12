@@ -21,6 +21,12 @@ h1 {
   font-weight: 100;
   line-height: 1.6; }
 
+.profile_image {
+  width:100;
+  height:150;
+  text-align: center;
+}
+
 .intro__links {
   display: flex;
   justify-content: start;
@@ -102,8 +108,3 @@ h1 {
   background: #125688;
   color: white;
 }
-
-
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-
-
