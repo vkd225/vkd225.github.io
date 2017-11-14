@@ -41,6 +41,10 @@ h1 {
   
 }
 
+.img_center {
+  text-align: center;
+}
+
 
 /*.intro__links li {
   flex: 1;
