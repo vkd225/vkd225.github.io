@@ -21,7 +21,6 @@ body {
   float: left;
   margin: auto;
   padding: 30px;
-  text-align: center;
 }
 
 h1 {
@@ -37,9 +36,9 @@ h1 {
   font-size: 16px; }
 
 
-.intro {
+.intro li {
   list-style: none;
-  text-align: center;
+  
 }
 
 
