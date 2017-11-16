@@ -12,8 +12,11 @@ body {
   -webkit-font-smoothing: antialiased; }
 
 .container {
-  max-width:660px;
+  max-width:700px;
   margin: auto;
+  padding: 60px 60px;
+  padding-top: 0px; 
+  font-family: 'Open Sans', sans-serif;
 }
 
 .profile {
