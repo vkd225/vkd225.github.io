@@ -23,7 +23,8 @@ body {
   max-width:200px;
   float: left;
   margin: auto;
-  padding: 30px;
+  padding: 50px;
+  padding-left: 85px;
 }
 
 h1 {
