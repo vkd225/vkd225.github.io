@@ -22,7 +22,9 @@
   </head>
 
   <body>
-    <a id="button"></a>
+    <div id="button">
+      <a id="button"></a>
+    </div>
 
     <div class="profile">
       <br/>
@@ -51,11 +53,11 @@
       </div>
       <br/>
 
-      <button class="btn default" onclick="switchPersonal();">
+      <button onclick="switchPersonal();">
         Personal Projects
       </button>
 
-      <button class="btn default" onclick="switchProfessional();">
+      <button onclick="switchProfessional();">
         Industrial Projects
       </button>
 
@@ -219,10 +221,10 @@
     </div>
 
     <script>
-      var btn = $('#button');
+      let btn = $('#button');
 
       $(window).scroll(function() {
-        if ($(window).scrollTop() > 300) {
+        if ($(window).scrollTop() > 30) {
           btn.addClass('show');
         } else {
           btn.removeClass('show');
@@ -231,7 +233,7 @@
 
       btn.on('click', function(e) {
         e.preventDefault();
-        $('html, body').animate({scrollTop:0}, '300');
+        $('html, body').animate({scrollTop:0}, '30');
       });
 
       function switchPersonal() {
