@@ -30,7 +30,16 @@ body {
 h1 {
   font-size: 40px;
   font-weight: 100;
-  line-height: 1.6; }
+  line-height: 1.6; 
+}
+
+h3 {
+  margin: 5px 0px;
+}
+
+h4 {
+  margin: 5px;
+}
 
 .intro__links {
   display: flex;
@@ -49,6 +58,43 @@ h1 {
   text-align: center;
 }
 
+.btn {
+  border: none;
+  background-color: #ddd;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  display: inline-block;
+}
+
+/* On mouse-over */
+.btn:hover {background: #eee;}
+.btn:focus {outline:none;}
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: #ccc;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+
+#Div2 {
+  display: none;
+}
+
+.project {
+  margin-bottom: 50px;
+}
 
 /*.intro__links li {
   flex: 1;
@@ -69,6 +115,7 @@ h1 {
 .social_media {
   text-align: center;
   margin: auto;
+  padding: 20px;
 }
 
 .fa {
