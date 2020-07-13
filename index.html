@@ -22,8 +22,6 @@
   </head>
 
   <body>
-    <!-- <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button> -->
-
     <div class="profile">
       <br/>
       <img src="images/profile.png" width="200" height="200" alt="Profile Image">
@@ -72,7 +70,7 @@
           
           <div>
             <h4 style="display: inline;">Source Code: <a href="https://github.com/vkd225/kill-corona" target="_blank">Github Link</a></h4>
-            <h4 style="display: inline;">Working Link: <a href="https://vikash.d3h0tp4u7ql62r.amplifyapp.com/" target="_blank">Click Here</a></h4>
+            <h4 style="display: inline;">Play Here: <a href="https://vikash.d3h0tp4u7ql62r.amplifyapp.com/" target="_blank">Click Here</a></h4>
           </div>
         </div>
 
@@ -218,26 +216,28 @@
       </div>
     </div>
 
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Go to top</button>
+
     <script>
-      // //Get the button
-      // var mybutton = document.getElementById("myBtn");
+      //Get the button
+      var mybutton = document.getElementById("myBtn");
 
-      // // When the user scrolls down 20px from the top of the document, show the button
-      // window.onscroll = function() {scrollFunction()};
+      // When the user scrolls down 20px from the top of the document, show the button
+      window.onscroll = function() {scrollFunction()};
 
-      // function scrollFunction() {
-      //   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-      //     mybutton.style.display = "block";
-      //   } else {
-      //     mybutton.style.display = "none";
-      //   }
-      // }
+      function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
 
-      // // When the user clicks on the button, scroll to the top of the document
-      // function topFunction() {
-      //   document.body.scrollTop = 0;
-      //   document.documentElement.scrollTop = 0;
-      // }
+      // When the user clicks on the button, scroll to the top of the document
+      function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
 
       function switchPersonal() {
         var personal = document.getElementById("Div1");
