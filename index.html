@@ -22,6 +22,8 @@
   </head>
 
   <body>
+    <a id="button"></a>
+
     <div class="profile">
       <br/>
       <img src="images/profile.png" width="200" height="200" alt="Profile Image">
@@ -210,34 +212,27 @@
           <a href="https://www.instagram.com/wannabe.climber/" target="_blank" class="fa fa-instagram"></a>
           <a href="https://plus.google.com/u/0/+VIKASHDEO977" target="_blank" class="fa fa-google"></a>
           <a href="https://www.youtube.com/watch?v=mWlY5cXeKFY" target="_blank" class="fa fa-youtube"></a>
-          <div>
+          <div style="padding: 10px;">
             <small>&copy; Copyright 2020, Vikash Deo</small>
           </div>
       </div>
     </div>
 
-    <button onclick="topFunction()" id="myBtn" title="Go to top">Go to top</button>
-
     <script>
-      //Get the button
-      var mybutton = document.getElementById("myBtn");
+      var btn = $('#button');
 
-      // When the user scrolls down 20px from the top of the document, show the button
-      window.onscroll = function() {scrollFunction()};
-
-      function scrollFunction() {
-        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-          mybutton.style.display = "block";
+      $(window).scroll(function() {
+        if ($(window).scrollTop() > 300) {
+          btn.addClass('show');
         } else {
-          mybutton.style.display = "none";
+          btn.removeClass('show');
         }
-      }
+      });
 
-      // When the user clicks on the button, scroll to the top of the document
-      function topFunction() {
-        document.body.scrollTop = 0;
-        document.documentElement.scrollTop = 0;
-      }
+      btn.on('click', function(e) {
+        e.preventDefault();
+        $('html, body').animate({scrollTop:0}, '300');
+      });
 
       function switchPersonal() {
         var personal = document.getElementById("Div1");
