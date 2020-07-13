@@ -58,7 +58,7 @@ h4 {
   text-align: center;
 }
 
-.btn {
+button {
   border: none;
   background-color: #ddd;
   padding: 14px 28px;
@@ -68,8 +68,8 @@ h4 {
 }
 
 /* On mouse-over */
-.btn:hover {background: #eee;}
-.btn:focus {outline:none;}
+button:hover {background: #eee;}
+button:focus {outline:none;}
 
 #myBtn {
   display: none;
