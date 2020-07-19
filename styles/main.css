@@ -93,6 +93,7 @@ button:focus {outline:none;}
   visibility: hidden;
   z-index: 1000;
 }
+
 #button::after {
   content: "\f077";
   font-family: FontAwesome;
@@ -117,6 +118,12 @@ button:focus {outline:none;}
 
 #Div2 {
   display: none;
+}
+
+#ButtonProfessional {
+  display: none;
+  border-color:green;
+  border-bottom: 4px solid;
 }
 
 .project {
